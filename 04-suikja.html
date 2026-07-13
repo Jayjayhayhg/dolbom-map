@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>수익자 방과후 · 방과후·돌봄 한 장 지도</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@500;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--paper:#F7F8F5;--ink:#22312B;--pine:#1E4D3C;--pine-soft:#E4EDE7;
+--hl:#FFE45C;--hl-soft:#FFF4B8;--line:#D4DAD3;--muted:#66736C;--warn:#B4552D;
+--mono:'IBM Plex Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:Pretendard,-apple-system,sans-serif;line-height:1.65;font-size:16px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 80px}
+a{color:var(--pine)}
+:focus-visible{outline:3px solid var(--pine);outline-offset:2px;border-radius:2px}
+header{padding:44px 0 8px;border-bottom:3px solid var(--ink)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px}
+.eyebrow a{text-decoration:none;font-weight:700}
+h1{font-family:Hahmlet,serif;font-weight:800;font-size:clamp(28px,6vw,42px);line-height:1.25;margin:14px 0 10px}
+h1 .hl{background:linear-gradient(transparent 58%,var(--hl) 58%)}
+.tags{display:flex;gap:8px;padding-bottom:24px;flex-wrap:wrap}
+.tag{font-size:12px;font-weight:700;padding:3px 12px;border-radius:999px}
+.tag-free{background:var(--hl)}
+.tag-vou{background:var(--pine);color:#fff}
+.tag-fee{border:1.5px solid var(--warn);color:var(--warn)}
+.tag-plain{background:var(--pine-soft)}
+section{margin-top:52px}
+.sec-tag{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--pine);border:1.5px solid var(--pine);display:inline-block;padding:3px 10px;border-radius:999px;margin-bottom:14px}
+h2{font-family:Hahmlet,serif;font-weight:700;font-size:23px;margin-bottom:8px}
+.sec-note{font-size:14px;color:var(--muted);margin-bottom:18px}
+blockquote{font-family:Hahmlet,serif;font-size:18px;line-height:1.7;padding:4px 0 4px 20px;border-left:4px solid var(--hl);margin:18px 0 6px}
+.cite{font-size:13px;color:var(--muted);font-family:var(--mono)}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.kv-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.kv-card b{display:block;font-size:12px;color:var(--pine);font-family:var(--mono);letter-spacing:.05em;margin-bottom:4px}
+.kv-card span{font-size:14px;line-height:1.5}
+ul.plain{margin-left:18px;font-size:15px}
+ul.plain li{margin-bottom:9px}
+ul.plain b{background:linear-gradient(transparent 62%,var(--hl-soft) 62%)}
+.box{background:#fff;border:1.5px solid var(--ink);border-radius:10px;padding:18px 20px;box-shadow:5px 5px 0 var(--pine-soft);margin-top:16px}
+.box h3{font-size:16px;margin-bottom:8px;font-family:Hahmlet,serif}
+.box ul{margin-left:18px;font-size:14px}
+.box li{margin-bottom:6px}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.field{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.field b{display:block;font-size:15px;margin-bottom:5px}
+.field span{font-size:13px;color:var(--muted);line-height:1.6}
+.verify{border:2px dashed var(--warn);border-radius:10px;padding:18px 20px;background:#fff}
+.verify h2{color:var(--warn);font-size:19px}
+.verify ul{margin:10px 0 0 18px;font-size:14px}
+.verify li{margin-bottom:7px}
+.memo{background:var(--hl-soft);border-radius:10px;padding:18px 20px;margin-top:52px}
+.memo .m-tag{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.08em}
+.memo p{font-family:Hahmlet,serif;font-size:16px;margin-top:8px}
+.memo p.empty{color:var(--muted)}
+.pnav{display:flex;justify-content:space-between;gap:10px;margin-top:56px;flex-wrap:wrap}
+.pnav a{text-decoration:none;font-weight:700;font-size:14px;padding:12px 16px;border:1.5px solid var(--ink);border-radius:8px;background:#fff}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="eyebrow"><span><a href="index.html">← 허브</a>&nbsp;&nbsp;방과후·돌봄 한 장 지도 — 04</span><span>기준: 2026 길라잡이</span></div>
+  <h1>수익자 방과후: <span class="hl">수요가 만드는</span> 프로그램</h1>
+  <div class="tags"><span class="tag tag-fee">수익자 부담</span><span class="tag tag-plain">방과후 축</span><span class="tag tag-plain">초1~6</span></div>
+</header>
+
+<section>
+  <span class="sec-tag">정의</span>
+  <blockquote>초1~6학년 학생·학부모의 수요와 참여 희망 선택을 기반으로 정규수업 외 시간에 학교 자체 계획에 따라 편성·운영하는 특기·적성 및 교과 관련 프로그램</blockquote>
+  <p class="cite">— 길라잡이 제1부 · 관련 용어의 정의</p>
+</section>
+
+<section>
+  <span class="sec-tag">기본 정보</span>
+  <h2>한눈에</h2>
+  <div class="kv">
+    <div class="kv-card"><b>대상</b><span>초1~6학년 중 희망 학생 (인근 학교 학생에게 개방 가능)</span></div>
+    <div class="kv-card"><b>기간</b><span>방과 후(주중·토요일) 및 방학 중</span></div>
+    <div class="kv-card"><b>비용</b><span>수익자 부담 (자유수강권·초3 이용권 대상자 참여 보장)</span></div>
+    <div class="kv-card"><b>선정</b><span>초과 수요 시 학교 계획에 따라 선착순·추첨 등</span></div>
+    <div class="kv-card"><b>인력</b><span>외부강사(개인·업체), 교육기부자, 희망 교원</span></div>
+    <div class="kv-card"><b>주관</b><span>늘봄전담실이 운영 계획·행정 주관</span></div>
+  </div>
+</section>
+
+<section>
+  <span class="sec-tag">프로그램</span>
+  <h2>네 갈래의 편성 분야</h2>
+  <div class="fields">
+    <div class="field"><b>미래 신수요</b><span>AI·디지털, 코딩, 빅데이터, 로봇, 드론, 에듀테크, 과학 체험, 발명, 기후·환경, 생태 체험 — 리터러시 교육 병행</span></div>
+    <div class="field"><b>진로 체험 · 지역사회</b><span>직업인 특강, 진로체험센터, 공공기관·기업 연계, 대학생 멘토링, 금융·경제, 지역 역사</span></div>
+    <div class="field"><b>체육 · 문화 · 예술</b><span>놀이체육, 댄스, 구기종목, 그림, 악기, 연극·뮤지컬, 요리, 전통놀이, 공예, 합창</span></div>
+    <div class="field"><b>사회·정서 · 기초학력</b><span>보드게임·퍼즐 협동, 마음 표현, 스피치, 생활습관, 수학 놀이, 생활 외국어, 이주배경학생 지원</span></div>
+  </div>
+</section>
+
+<section>
+  <span class="sec-tag">방침</span>
+  <h2>운영의 뼈대</h2>
+  <ul class="plain">
+    <li>학생의 <b>자발적 참여가 원칙</b>, 강제 참여 금지</li>
+    <li>운영 계획서는 운영 기간 단위로 <b>강사·프로그램별</b> 작성</li>
+    <li>학습취약계층 대상 프로그램 개설, 심리·학습·진로 상담 병행</li>
+    <li>학교운영위원회가 <b>수익자 경비 부담 사항</b>이 포함된 운영 계획 심의</li>
+    <li>각종 재정 지원 사업과 연계하여 효율적으로 운영</li>
+  </ul>
+</section>
+
+<section>
+  <div class="verify">
+    <h2>⚠ 현장 확인 필요</h2>
+    <ul>
+      <li>수강료 책정 기준 — 총론은 "지역 사교육 기관보다 저렴하게"만 명시, 실제 단가는 학교 결정</li>
+      <li>선착순·추첨 등 참여 학생 선정 방식 — 학교 계획으로 결정</li>
+      <li>토요일·방학 중 운영 여부와 범위 — 학교 여건에 따라 상이</li>
+    </ul>
+  </div>
+</section>
+
+<section class="memo" aria-label="현장 메모">
+  <span class="m-tag">✎ 현장 메모</span>
+  <p class="empty">[이 유형에 대한 현장의 한 줄 — 채워질 예정]</p>
+</section>
+
+<div class="pnav"><a href="03-cho3.html">← 03 초3 이용권</a><a href="05-dolbom.html">05 돌봄교실 →</a></div>
+
+<footer>
+  출처: 경기도교육청 지역교육정책과, 「2026 초등 방과후·돌봄 운영 길라잡이」(2026. 1. 14.)<br>
+  이 페이지는 제도 이해를 돕는 현장 실무자의 참고 자료이며, 교육청의 공식 해석을 대신하지 않습니다.
+</footer>
+</div>
+</body>
+</html>
