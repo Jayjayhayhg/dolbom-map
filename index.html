@@ -65,8 +65,7 @@ blockquote{font-family:Hahmlet,serif;font-size:18px;line-height:1.7;padding:4px 
 
 /* ── 구조도 ── */
 .tree-root{background:var(--ink);color:#fff;font-family:Hahmlet,serif;font-weight:700;font-size:19px;text-align:center;padding:14px;border-radius:10px;margin-bottom:6px}
-.branches{display:grid;grid-template-columns:3fr 1fr;gap:14px;margin-top:14px}
-@media(max-width:640px){.branches{grid-template-columns:1fr}}
+.branches{margin-top:14px}
 .branch{border:1.5px solid var(--ink);border-radius:10px;overflow:hidden;background:#fff}
 .branch-h{background:var(--pine-soft);font-weight:800;padding:10px 14px;font-size:15px;border-bottom:1.5px solid var(--ink)}
 .type{padding:14px;border-bottom:1px solid var(--line)}
@@ -164,11 +163,10 @@ footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--line);font-si
 
 <section aria-label="구조">
   <span class="sec-tag">구조</span>
-  <h2>1개 우산, 2개 축, 4개 유형</h2>
+  <h2>1개 우산, 4개 유형</h2>
   <div class="tree-root">방과후·돌봄</div>
   <div class="branches">
     <div class="branch">
-      <div class="branch-h">방과후</div>
       <div class="type">
         <div class="type-name">초1~2 맞춤형 <span class="tag tag-free">무상</span></div>
         <p>저학년 발달 단계를 고려한 적응·놀이·체험·학습 활동을 <b>매일 2시간(차시)</b> 편성. 늘봄전담실이 계획 수립·행정을 주관.</p>
@@ -181,9 +179,6 @@ footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--line);font-si
         <div class="type-name">수익자 방과후 <span class="tag tag-fee">수익자 부담</span></div>
         <p>초1~6 수요 기반의 특기·적성 및 교과 프로그램. 학교 자체 계획으로 편성, 학교운영위원회가 경비 부담 사항 심의.</p>
       </div>
-    </div>
-    <div class="branch">
-      <div class="branch-h">돌봄</div>
       <div class="type">
         <div class="type-name">돌봄교실 <span class="tag tag-free">무상</span></div>
         <p><b>아침 · 오후 · 틈새 · 저녁</b> 시간에 쉼과 놀이 제공. 초1~2 대상.</p>
